@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Show - Registration</title>
+    <link rel="stylesheet" href="form_style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="bms.png" alt="Book My Show Logo">
+            <h2>Deadpool & Wolverine- Nagpur</h2>
+        </header>
+        <div class="form-header">
+            <p>Please provide details ofb Attendees</p>
+        </div>
+        <form id="registrationForm">
+            <h3>Registration</h3>
+            <div class="form-group">
+                <label for="fullName">Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="countryCode">Country Code</label>
+                <select id="countryCode" name="countryCode" required>
+                    <option value="+91">IN - +91</option>
+                    <!-- Additional country codes can be added here -->
+                </select>
+                <small class="sub-text">Choose the country code for your phone number</small>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group otp-group">
+                <label for="phoneOtp">Phone OTP</label>
+                <input type="text" id="phoneOtp" name="phoneOtp" required>
+                <button type="button" class="otp-button" onclick="sendPhoneOtp()">Send OTP</button>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group otp-group">
+                <label for="emailOtp">Email OTP</label>
+                <input type="text" id="emailOtp" name="emailOtp" required>
+                <button type="button" class="otp-button" onclick="sendEmailOtp()">Send OTP</button>
+            </div>
+            <div class="form-group terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the Terms and Conditions.</label>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+    <script src="form_script.js"></script>
+</body>
+</html>

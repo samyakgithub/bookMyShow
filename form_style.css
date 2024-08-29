@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+header img {
+    width: 150px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+header h2 {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.form-header {
+    background-color: #ffebcd;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.form-header p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+form h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.sub-text {
+    display: block;
+    color: #999;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.otp-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.otp-group input {
+    flex: 1;
+}
+
+.otp-button {
+    padding: 10px;
+    background-color: #e02d2d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.otp-button:hover {
+    background-color: #c72828;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+}
+
+.terms input {
+    margin-right: 10px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e02d2d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #c72828;
+}

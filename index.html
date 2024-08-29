@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMyShow - Landing Page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      header {
+        background-color: #ff2e63;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        font-size: 2em;
+        font-family: "Roboto", sans-serif;
+        color: black;
+      }
+
+      .logo .my {
+        background-color: #ff2e63;
+        color: white;
+        font-family: "Anton", sans-serif;
+        padding: 0 10px;
+        margin: 0 5px;
+        transform: rotate(-10deg);
+      }
+
+      .search-bar {
+        flex: 1;
+        margin: 0 20px;
+      }
+
+      .search-bar input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        font-size: 1em;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .get-tickets-btn {
+        background-color: #08d9d6;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+        display: inline-block;
+      }
+
+      .get-tickets-btn:hover {
+        background-color: #06b5b2;
+      }
+
+      .images-container {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      .image-card {
+        text-align: center;
+        flex: 1;
+      }
+
+      .image-card img {
+        width: 100%; /* Fills the container width */
+        height: auto; /* Maintains original aspect ratio */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      footer {
+        background-color: #252a34;
+        color: white;
+        padding: 10px 0;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">book<span class="my">my</span>show</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for movies, events, plays..." />
+      </div>
+      <a href = "" class="get-tickets-btn">Search</a>
+    </header>
+
+    <section class="images-container">
+      <div class="image-card">
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BMTA1NmUxYzItZmVmNy00YmQxLTk4Y2UtZjVkMWUwMWQ5N2IxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+          alt="Movie Poster 1"
+        />
+        <a href="stree2.html" class="get-tickets-btn">Get Tickets</a>
+      </div>
+      <div class="image-card">
+        <img
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8812ba3f-a691-4d92-bffb-bd74e66278b1/dhttokr-d76b0f43-80cc-410c-9e30-5731cdf00248.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4MTJiYTNmLWE2OTEtNGQ5Mi1iZmZiLWJkNzRlNjYyNzhiMVwvZGh0dG9rci1kNzZiMGY0My04MGNjLTQxMGMtOWUzMC01NzMxY2RmMDAyNDguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.uXqHDLCM5sLqKJ71-yCy1V8lcdjgS7Kv0JFoQSFP7QU"
+          alt="Movie Poster 2"
+        />
+        <a href="alienromilus.html" class="get-tickets-btn">Get Tickets</a>
+      </div>
+      <div class="image-card">
+        <img
+          class="third-image"
+          src="https://m.media-amazon.com/images/M/MV5BNzRiMjg0MzUtNTQ1Mi00Y2Q5LWEwM2MtMzUwZDU5NmVjN2NkXkEyXkFqcGc@._V1_.jpg"
+          alt="Movie Poster 3"
+        />
+        <a href="deadpool.html" class="get-tickets-btn">Get Tickets</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 BookMyShow. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
